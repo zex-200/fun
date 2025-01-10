@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .tooltip {
+              position: relative; 
+              display: inline-block;
+      }
+      .tooltip .tooltiptext {
+              visibility: hidden;
+              background-color:black;
+              width: 120px;
+              text-align: center;
+              color: #fff;
+              border-radius: 8px;
+              padding: 5px 0;
+              position: absolute;
+              z-index: 1;
+      }
+        body{
+            background: scroll;
+            background-color: rgb(56, 7, 97);
+            font-size: larger;
+        }
+        #grad1 {
+          height: 200px;
+          background-color: purple;
+          background-color:  linear-gradient(red, orange, yellow, blue,indigo, 20%);
+        }
+        li a {
+           display: block;
+           color: white;
+           padding: 8px 16px;
+           text-decoration: none;
+           text-align: center;
+        }
+        ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           width: 120px;
+           background-color: aqua;
+           position: fixed;
+           height: 100%;
+           overflow: auto; 
+        }
+        li a.active {
+            color: aliceblue;
+            background-color: rgb(255,0,0);
+        }
+        li a:hover:not(.active) {
+           background-color: aqua;
+           color: black;
+        }
+      h1{
+        color: rgb(255,0,0);
+        text-shadow:2px 2px rgb(25,0,255);
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+      }
+      h4{
+        color:greenyellow;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+      }  
+      h5 {
+        color: gold;
+      }
+      img{
+        image-orientation: flip;
+        height: 20%;
+        width: 20%;
+        border-radius: 50%;
+      }
+      table{
+        display:block;
+        padding: 5px 5px 5px 5px;
+      }
+      th{
+        background-color:black;
+        color: aliceblue;
+      }
+      td{
+        background-color: chartreuse;
+        color: black;
+      }
+      button{
+        background-color: darkorange;
+        color: aliceblue;
+        padding: 15px 15px 15px 15px;
+        border: 10px 20px;
+        border-radius: 50%;
+      }
+      p{
+        color:blue;
+      }
+      input[type=text],select {
+        width: 100px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid aliceblue;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type=submit]{
+        width: 100px;
+        background-color: rgb(0,255,0);
+        color: aliceblue;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      div {
+        border-radius: 5px;
+        padding: 20px;
+      }
+      .pagination {
+display: inline-block;
+      }
+    </style>
+<head>    
+<body>
+  <marquee class="m1" behavior="scroll" direction="up" screen-delay="0">
+    <img src="C:\Users\User\Documents\AlbumArtSmall.jpg" width="20px" height="20px"/><br><br>
+    <img src="C:\Users\User\Documents\AlbumArtSmall.jpg" width="20px" height="29px"/><br><br>
+  </marquee>
+    <ul>
+        <li><a class="active" href="Home">HOME</a></li>
+        <li><a href="Share">SHARE</a></li>
+        <li><a href="Contact">CONTACT</a></li>
+        <li><a href="About">ABOUT</a></li>
+    </ul>
+    <div style="margin-left: 20%;padding: 1px 150x;height: 1000px;">
+    <b><h1>KIRUGU ISLAMIC SCHOOL</h1>
+    <h4>STUDY ISLAM,SEEK THE TRUTH</h4>
+    <hr><p>Dear parents we gladly welcome you to our official school website where you can interrupt with the school without physically appearing at the school. <p>    
+        <h5>SCHOOL MOSQUE</h5>
+        <img src="E:\Pictures\FB_IMG_1543687490769.jpg" alt="SCHOOL MOSQUE">
+        <p>Our school is a home away from home.</p>
+        <h5>Competitive learning</h5>
+        <img src="E:\Received\IMG-20240722-WA0037.jpg" alt="Competitive learning">
+        <h5>Cool environment</h5>
+        <img src="E:\Received\FB_IMG_1550081489507.jpg" alt="Soothing environment">
+        <h5>Balanced diety</h5>
+        <img src="E:\Received\IMG-20240729-WA0015.jpg" alt="Balanced diety"> 
+     <table>
+<tr>
+    <th>Class</th>
+    <th>Fees</th>
+</tr>
+<tr>
+    <td>Nursury</td>
+    <td>55000</td>
+</tr>
+<tr>
+    <td>P.1-P.3</td>
+    <td>75000</td>
+</tr>
+<tr>
+    <td>P.4</td>
+    <td>85000</td>
+</tr>
+<tr>
+    <td>Transport</td>
+    <td>30000</td>
+</tr>
+<tr>
+    <td>Registration</td>
+    <td>10000 paid once</td>
+</tr>
+     </table>   
+         <p>You can register your child online or free of charge or report any grievance or connect to the Headteacher directly into parent-teacher's official whatsApp group.</p>
+               <button>Register child</button> 
+                <button>Report grievance</button> 
+                <button>Join group</button> 
+         <div>
+          <form action="/action_page.php">
+            <label for="fname">First Name</label> 
+            <input type="type" id="fname" name="firstname" placeholder="Your name...">
+            <label for="lname">Last Name</label>
+            <input type="type" id="lname" name="lastname" placeholder="Your last name...">
+            <label for="district">District</label>
+            <select id="district" name="District">
+              <option value="kampala">KAMPALA</option>
+              <option value="kayunga">KAYUNGA</option>
+              <option value="iganga">IGANGA</option>
+              <option value="mbaale">MBAALE</option>
+              <input type="submit" value="submit">
+            </select>
+          </form>
+         </div>                
+         <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">CHECK DATE AND TIME</button>
+         <p id="demo"></p>
+         <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="C:\Users\User\Documents\hyper ram.html">1</a>
+          <a href="#">2</a>
+          <a href="#">&raquo;</a>
+         </div>
+</body>
+</html>           
